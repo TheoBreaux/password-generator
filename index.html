@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div class="container-unpopulated">
+        <div class="heading">
+            <h1>Generate a <br><span class="green">random password</span></h1>
+        </div>
+        <div class="tagline">
+            <h3>Never use an insecure password again.</h3>
+        </div>
+
+        <div>
+            <button id="generate">Generate Passwords</button>
+        </div>
+
+        <div>
+            <button id="reset">Reset</button>
+        </div>
+
+
+
+        <hr>
+        <h2>UNPOPULATED</h2>
+
+        <div id="password-option1"></div>
+        <div id="password-option2"></div>
+    </div>
+
+    <div class="container-populated">
+        <div class="heading">
+            <h1>Generate a <br><span class="green">random password</span></h1>
+        </div>
+        <div class="tagline">
+            <h3>Never use an insecure password again.</h3>
+        </div>
+
+        <div>
+            <button id="generate-btn" onclick="generatePassword()">Generate Passwords</button>
+        </div>
+
+        <div>
+            <button id="reset-btn" onclick="reset()">Reset</button>
+        </div>
+
+        <hr>
+        <h2>POPULATED</h2>
+
+        <div id="password-option1-populated"></div>
+        <div id="password-option2-populated"></div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
